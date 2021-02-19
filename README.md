@@ -73,7 +73,3 @@ The purpose of this lab is to help solidify the OOP Class inheritance concepts y
 -   You may find [this guide](https://css-tricks.com/examples/ShapesOfCSS/) helpful for drawing shapes with CSS (For triangle, use Top-Left, Top-Right, Bottom-Left, or Bottom-Right)
 -   Triangle area: `0.5 * base * height`
 -   Triangle perimeter (right isoceles): `2 * height + (square root of 2) * height`
-
-#### Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DXfDlDyofdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
