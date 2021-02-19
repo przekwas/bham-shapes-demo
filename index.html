@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shapes Awesomesauce</title>
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-gray-50">
+		<main class="min-h-screen flex flex-col items-center p-4">
+			<!-- entry form -->
+			<section class="w-3/4 border border-gray-300 rounded-lg shadow bg-white">
+				<div class="bg-gray-200 p-4 text-gray-400 font-extrabold">SHAPE CREATION</div>
+				<div class="flex w-full justify-between p-4">
+					<div class="flex flex-col justify-between">
+						<input
+							class="border py-2 px-4 rounded-lg mb-2"
+							placeholder="rectangle height"
+							id="rectangle-height"
+						/>
+						<input
+							class="border py-2 px-4 rounded-lg mb-2"
+							placeholder="rectangle width"
+							id="rectangle-width"
+						/>
+						<button
+							class="px-2 py-1 border border-indigo-900 rounded-lg bg-indigo-500 text-indigo-100"
+							id="rectangle-btn"
+						>
+							rectangle
+						</button>
+					</div>
+
+					<div class="flex flex-col justify-between">
+						<input
+							class="border py-2 px-4 rounded-lg mb-2"
+							placeholder="square side"
+							id="square-side"
+						/>
+						<button
+							class="px-2 py-1 border border-indigo-900 rounded-lg bg-indigo-500 text-indigo-100"
+							id="square-btn"
+						>
+							square
+						</button>
+					</div>
+
+					<div class="flex flex-col justify-between">
+						<input
+							class="border py-2 px-4 rounded-lg mb-2"
+							placeholder="circle radius"
+							id="circle-radius"
+						/>
+						<button
+							class="px-2 py-1 border border-indigo-900 rounded-lg bg-indigo-500 text-indigo-100"
+							id="circle-btn"
+						>
+							circle
+						</button>
+					</div>
+
+					<div class="flex flex-col justify-between">
+						<input
+							class="border py-2 px-4 rounded-lg mb-2"
+							placeholder="triangle side"
+							id="triangle-side"
+						/>
+						<button
+							class="px-2 py-1 border border-indigo-900 rounded-lg bg-indigo-500 text-indigo-100"
+							id="triangle-btn"
+						>
+							triangle
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- /entry form -->
+
+			<section class="flex flex-wrap w-3/4 justify-between mt-4">
+				<!-- canvas -->
+				<div class="border border-gray-300 rounded shadow bg-white">
+					<div class="bg-gray-200 p-4 text-gray-400 font-extrabold">SHAPE CANVAS</div>
+					<div class="canvas bg-white">
+                        
+                    </div>
+				</div>
+				<!-- /canvas -->
+				<!-- panel -->
+				<div class="border border-gray-300 rounded shadow bg-white">
+					<div class="bg-gray-200 p-4 text-gray-400 font-extrabold">SHAPE INFO</div>
+					<div class="panel bg-white p-4 flex flex-col justify-between">
+						<!-- panel value -->
+						<div
+							class="bg-green-100 border-b-4 rounded-lg shadow p-4 border-green-400 flex flex-col items-end"
+						>
+							<span class="text-gray-500 font-semibold text-sm">SHAPE NAME</span>
+							<div class="font-extrabold" id="shape-name">n/a</div>
+						</div>
+						<!-- /panel value -->
+						<!-- panel value -->
+						<div
+							class="bg-red-100 border-b-4 rounded-lg shadow p-4 border-red-400 flex flex-col items-end"
+						>
+							<span class="text-gray-500 font-semibold text-sm">SHAPE HEIGHT</span>
+							<div class="font-extrabold" id="shape-height">n/a</div>
+						</div>
+						<!-- /panel value -->
+                        <!-- panel value -->
+						<div
+                        class="bg-yellow-100 border-b-4 rounded-lg shadow p-4 border-yellow-400 flex flex-col items-end"
+                    >
+                        <span class="text-gray-500 font-semibold text-sm">SHAPE WIDTH</span>
+                        <div class="font-extrabold" id="shape-width">n/a</div>
+                    </div>
+                    <!-- /panel value -->
+                    <!-- panel value -->
+						<div
+                        class="bg-blue-100 border-b-4 rounded-lg shadow p-4 border-blue-400 flex flex-col items-end"
+                    >
+                        <span class="text-gray-500 font-semibold text-sm">SHAPE AREA</span>
+                        <div class="font-extrabold" id="shape-area">n/a</div>
+                    </div>
+                    <!-- /panel value -->
+                    <!-- panel value -->
+						<div
+                        class="bg-purple-100 border-b-4 rounded-lg shadow p-4 border-purple-400 flex flex-col items-end"
+                    >
+                        <span class="text-gray-500 font-semibold text-sm">SHAPE PERMITER</span>
+                        <div class="font-extrabold" id="shape-area">n/a</div>
+                    </div>
+                    <!-- /panel value -->
+                    <!-- panel value -->
+						<div
+                        class="bg-gray-100 border-b-4 rounded-lg shadow p-4 border-gray-400 flex flex-col items-end"
+                    >
+                        <span class="text-gray-500 font-semibold text-sm">SHAPE RADIUS</span>
+                        <div class="font-extrabold" id="shape-radius">n/a</div>
+                    </div>
+                    <!-- /panel value -->
+					</div>
+				</div>
+				<!-- /canvas -->
+			</section>
+		</main>
+
+		<script src="app.js"></script>
+	</body>
+</html>
